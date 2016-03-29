@@ -1,11 +1,11 @@
-name: Morea CORE (Change me)
+name: Your Programming Utility Belt With Python 
 markdown: kramdown
 kramdown:
   hard_wrap: false
   input: GFM
   syntax_highlighter: rouge
 mathjax: true
-baseurl: /core
+baseurl: /python-course
 exclude: [morea]
 morea_theme: spacelab
 morea_navbar_items:
