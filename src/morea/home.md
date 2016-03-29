@@ -8,7 +8,7 @@ morea_type: home
 
 Practical programming using Python.
 
-![Python Logo](/morea/python-logo.png)
+![Python Logo](/python-course/morea/python-logo.png)
 
 Solve real problems using real programming.
 
