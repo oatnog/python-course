@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Experiences | Your Programming Utility Belt With Python </title>
+  <title> Hello Web | Your Programming Utility Belt With Python </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -70,149 +70,67 @@
 </div>
 
 
-
 <div class="breadcrumb-bar">
   <div class="container">
     <ol class="breadcrumb">
-        
+      
       <li><a href="/python-course/">Home</a></li>
-      <li class="active">Experiences</li>
+      <li><a href="/python-course/modules">Modules</a></li>
+      <li><a href="/python-course/modules/web">Moving to the Web</a></li>
+      <li class="active">Hello Web</li>
     </ol>
   </div>
 </div>
 
-<div class="container">
-  <h1>Experiential Learning <small>in module order</small></h1>
-</div>
 
 <div class="container">
-  <p>This page collects together all of the “experiences” associated with individual modules.</p>
+  <h3 id="hello-world-on-the-web">“Hello World” on the Web</h3>
 
-<p>In this site, experiences represent “active” learning opportunities, as opposed to readings, which represent “passive” learning opportunities.  In many courses, readings and experiences together constitute the “assignments”.</p>
+<p>An experiential learning opportunity.  Here’s the simplest Flask web application:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s">"/"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s">"Hello World!"</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>PythonAnywhere will create this outline for you. Try it now.
+Go to the “Web” tab in your dashboard, and click “Add a new web app”</p>
+
+<h3 id="hello-yourname">Hello, yourname</h3>
+
+<p>Add another <em>route</em>, or URL the webapp recognizes.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/&lt;name&gt;'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello_name</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">'Hello, '</span> <span class="o">+</span> <span class="n">name</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="debugging">Debugging</h3>
+
+<p>If you run into problems, you can check the log, or
+add this line to your program before app.run().</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">app</span><span class="o">.</span><span class="n">debug</span> <span class="o">=</span> <span class="s">"TRUE"</span></code></pre></figure>
+
+<p>This will enable the web-based debugger, where you can check what line of code caused the problem and what state the program was in when it died.</p>
 
 </div>
-
-<div class="section-background-1">
-  <div class="container">
-    <h2><small>Module:</small> <a href="/python-course/modules/python1st/">Python First Steps</a></h2>
-
-    
-
-    <div class="row">
-    
-      
-       <div class="col-sm-3">
-         <a href="/python-course/morea/1st-steps//experience.html" class="thumbnail">
-           <h4>PythonAnywhere account creation</h4>
-             <p>Create a free account at PythonAnywhere.com</p>
-
-             <p>
-             
-             </p>
-         </a>
-       </div>
-       
-       
-      
-       
-    
-      
-       <div class="col-sm-3">
-         <a href="/python-course/morea/1st-steps//experience-console.html" class="thumbnail">
-           <h4>Python Console exploration</h4>
-             <p>Print, use variables, and input on the Console</p>
-
-             <p>
-             
-             </p>
-         </a>
-       </div>
-       
-       
-      
-       
-    
-    </div>
-  </div>
-</div>
-
-<div class="section-background-2">
-  <div class="container">
-    <h2><small>Module:</small> <a href="/python-course/modules/background/">Background</a></h2>
-
-    
-
-    <div class="row">
-    
-      
-       <div class="col-sm-3">
-         <a href="/python-course/morea/background//experience.html" class="thumbnail">
-           <h4>Review variables, lists, and loops</h4>
-             <p>The second experiential learning event.</p>
-
-             <p>
-             
-               <span class="badge">25 min</span>
-             
-             </p>
-         </a>
-       </div>
-       
-       
-      
-       
-    
-    </div>
-  </div>
-</div>
-
-<div class="section-background-1">
-  <div class="container">
-    <h2><small>Module:</small> <a href="/python-course/modules/web/">Moving to the Web</a></h2>
-
-    
-
-    <div class="row">
-    
-      
-       <div class="col-sm-3">
-         <a href="/python-course/morea/2flask//experience.html" class="thumbnail">
-           <h4>Hello Web</h4>
-             <p>Our first simple web application using Flask</p>
-
-             <p>
-             
-               <span class="badge">11 Jun 06:00 PM</span>
-             
-             </p>
-         </a>
-       </div>
-       
-       
-      
-       
-    
-      
-       <div class="col-sm-3">
-         <a href="/python-course/morea/2flask//experience-howzit.html" class="thumbnail">
-           <h4>Howzit Web</h4>
-             <p>Adding more to our program</p>
-
-             <p>
-             
-             </p>
-         </a>
-       </div>
-       
-       
-      
-       
-    
-    </div>
-  </div>
-</div>
-
-
 
 
 
