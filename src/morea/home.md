@@ -31,6 +31,6 @@ And Python is fun!
 
 We'll learn how to:
 
-- Store user information, postings, and images (see http://rubel.pythonanywhere.com)
+- Store user information, postings, and images (see [this example](http://rubel.pythonanywhere.com) )
 - Access online information such as weather or beach conditions and use it in your own site
 - "Glue" together data from whatever sources you need to, from spreadsheets to MS Access
