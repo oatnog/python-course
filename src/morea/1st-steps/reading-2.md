@@ -1,7 +1,7 @@
 ---
 title: "Bars through the ages"
 published: false
-morea_id: reading2
+morea_id: reading98
 morea_url: http://cnn.com
 morea_summary: "The second reading (cnn.com)"
 morea_type: reading

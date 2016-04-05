@@ -26,3 +26,6 @@ morea_navbar_items:
 
 #morea_head_breadcrumb_link: "http://cnn.com"
 #morea_head_breadcrumb_label: "CNN Site"
+
+gems:
+  - jekyll-gist

@@ -6,6 +6,7 @@ morea_outcomes:
  - helloweb-outcome
 morea_readings:
  - flasktut
+ - reading-webapps
 morea_experiences:
  - helloweb
  - howzitweb

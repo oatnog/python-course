@@ -9,7 +9,7 @@ morea_sort_order: 4
 
 ### "Hello World" on the Web
 
-An experiential learning opportunity.  Here's the simplest Flask web application:
+An experiential learning opportunity.  Here's our simple Flask web application with the addition of some lists:
 
 {% highlight python linenos %}
 
@@ -38,27 +38,15 @@ It's time for our webapp to produce more than just words--it's time for real web
 
 To do this, we will use a template.
 
-A Jinja2 template looks just like regular HTML, with the addition of 
+A Jinja2 template looks just like regular HTML, with the addition of double curly braces ("handlebar mustaches")
 
-{% highlight html linenos %}
-<!doctype html>
-<html>
-<head>
-  <title>Greetings!</title>
-  <style type="text/css">
-    body {
-      max-width: 600px;
-      font-family: 'Courier New', Courier, monospace;
-      margin: 1em auto;
-    }
-  </style>
-</head>
-<body>
-  <h1>I am Greet-O-Tron. I have prepared for you this greeting.</h1>
-  <p> {% raw %} {{ greet }}, {{ place }} {% endraw %} </p>
-</body>
-</html>
-{% endhighlight %}
+{% gist 208ee509e2fa6b39b401f27a8094143f %}
+
+To use this template, we need to change our Python code a little. 
+
+We'll *import* and use a new part of Flask called *render_template*. 
+
+Note how the variable names "greet" and "place" match in the program and in the template.
 
 {% highlight python linenos %}
 from flask import Flask, render_template
