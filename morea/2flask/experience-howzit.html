@@ -86,7 +86,7 @@
 <div class="container">
   <h3 id="hello-world-on-the-web">“Hello World” on the Web</h3>
 
-<p>An experiential learning opportunity.  Here’s the simplest Flask web application:</p>
+<p>An experiential learning opportunity.  Here’s our simple Flask web application with the addition of some lists:</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
@@ -125,42 +125,17 @@
 
 <p>To do this, we will use a template.</p>
 
-<p>A Jinja2 template looks just like regular HTML, with the addition of</p>
+<p>A Jinja2 template looks just like regular HTML, with the addition of double curly braces (“handlebar mustaches”)</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17</pre></td><td class="code"><pre><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>Greetings!<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-    <span class="nt">body</span> <span class="p">{</span>
-      <span class="nl">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">;</span>
-      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Courier New'</span><span class="p">,</span> <span class="n">Courier</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
-      <span class="nl">margin</span><span class="p">:</span> <span class="m">1em</span> <span class="nb">auto</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>I am Greet-O-Tron. I have prepared for you this greeting.<span class="nt">&lt;/h1&gt;</span>
-  <span class="nt">&lt;p&gt;</span>  ,   <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/208ee509e2fa6b39b401f27a8094143f.js"> </script>
+
+<p>To use this template, we need to change our Python code a little.</p>
+
+<p>We’ll <em>import</em> and use a new part of Flask called <em>render_template</em>.</p>
+
+<p>Note how the variable names “greet” and “place” match in the program and in the template.</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
@@ -215,7 +190,7 @@ rubel@goosemoon.org</p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
-        Last update on: <span>2016-03-29 08:22:18 -1000</span></p>
+        Last update on: <span>2016-04-04 21:56:34 -1000</span></p>
 
       <p style="margin: 0">
         
@@ -224,13 +199,13 @@ rubel@goosemoon.org</p>
         | 4 outcomes
         
         
-        | 3 readings
+        | 5 readings
         
         
         | 5 experiences
         
         
-        | 3 assessments
+        | 4 assessments
         
       </p>
     </div>

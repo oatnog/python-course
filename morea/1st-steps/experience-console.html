@@ -120,24 +120,65 @@
 
 <h3 id="lists-and-loops">Lists and Loops</h3>
 
-<p>If you are familiar with Scratch or the Code.org tutorials, you will know about loops.</p>
+<p>If you are familiar with Scratch or the Code.org tutorials, you will know about loops.
+They let you repeat whatever is inside the loop.</p>
 
-<p>Instead of looping for a certain number of times, it is more common in Python to loop over each entry in a list (or another iterator).</p>
+<p><img src="scratch-repeat-say.png" alt="Repeat Loop Block" title="Scratch Repeat Block" /></p>
+
+<p>This Scratch block would repeat 10 times. Each time, it will say “Hello”. Python can do this, but more often you will loop over each item in a <em>list</em>.</p>
+
+<p>In our example below, instead of saying “loop over the three veggies”, we say “for each of the veggies in the salad, print the veggie’s name.”</p>
+
+<p>This makes our program more flexible and easy to change.</p>
 
 <ul>
-  <li>Note the extra spaces after the “for” line! They are essential. Everything after that space gets included in the loop.</li>
+  <li>Note the <em>spaces</em> after the “for” line! They are essential. All -indented- lines after the get included in the loop.</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
-<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">salad</span> <span class="o">=</span> <span class="p">[</span><span class="s">"tomato"</span><span class="p">,</span> <span class="s">"cucumber"</span><span class="p">,</span> <span class="s">"lettuce"</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">salad</span><span class="p">)</span>
+<span class="p">[</span><span class="s">"tomato"</span><span class="p">,</span> <span class="s">"cucumber"</span><span class="p">,</span> <span class="s">"lettuce"</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">veggie</span> <span class="ow">in</span> <span class="n">salad</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">veggie</span><span class="p">)</span>
 <span class="o">...</span> 
-<span class="mi">1</span>
-<span class="mi">2</span>
-<span class="mi">3</span>
+<span class="n">tomato</span>
+<span class="n">cucumber</span>
+<span class="n">lettuce</span>
 <span class="o">&gt;&gt;&gt;</span> </code></pre></figure>
+
+<p>Let’s look at this piece by piece.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">salad</span> <span class="o">=</span> <span class="p">[</span><span class="s">"tomato"</span><span class="p">,</span> <span class="s">"cucumber"</span><span class="p">,</span> <span class="s">"lettuce"</span><span class="p">]</span>
+</code></pre>
+</div>
+
+<p>First, create a list of vegetables. Call that list “salad”. (Print it out to verify.)</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">veggie</span> <span class="ow">in</span> <span class="n">salad</span><span class="p">:</span>
+</code></pre>
+</div>
+
+<p>Start a loop. The loop will run once for each entry in the list “salad”. (So, three times.) 
+Refer to the current entry in the list by the name “veggie”.</p>
+
+<p>So, the first time through, when you say “veggie” it will use the string “tomato”. The second, “cucumber”.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="n">veggie</span><span class="p">)</span>
+<span class="o">...</span>
+</code></pre>
+</div>
+
+<p>Okay, what is happening here? Instead of the »&gt; symbols, we see … three periods. 
+And there are spaces before the print() function. What does this mean?</p>
+
+<p>Remember, Python is designed to be easy to read. The <em>indentation</em> matters.</p>
+
+<p>Just like the Scratch “repeat” block repeats everything inside it, a Python loop will repeat everything which has been indented.</p>
+
+<p>To indent before the “print” statement, type four spaces.
+Hit enter a second time to end your loop in the console.</p>
+
+<p>Try it now and see.</p>
 
 
 </div>
@@ -156,7 +197,7 @@ rubel@goosemoon.org</p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
-        Last update on: <span>2016-03-29 08:22:18 -1000</span></p>
+        Last update on: <span>2016-04-04 21:56:34 -1000</span></p>
 
       <p style="margin: 0">
         
@@ -165,13 +206,13 @@ rubel@goosemoon.org</p>
         | 4 outcomes
         
         
-        | 3 readings
+        | 5 readings
         
         
         | 5 experiences
         
         
-        | 3 assessments
+        | 4 assessments
         
       </p>
     </div>
