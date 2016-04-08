@@ -2,6 +2,7 @@
 title: "Moving to the Web"
 published: true
 morea_id: web
+morea_icon_url: /morea/2flask/flask.png
 morea_outcomes:
  - helloweb-outcome
 morea_readings:

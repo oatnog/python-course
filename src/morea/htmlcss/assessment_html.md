@@ -1,21 +1,21 @@
 ---
-title: "Store Postings in a Database"
+title: "Read Data from Internet Resources"
 published: true
-morea_id: assessment_db
+morea_id: assessment_html
 morea_type: assessment
-morea_sort_order: 5
+morea_sort_order: 6
 ---
 
 #### Online Data
 Include a FORM in our web template which POSTs to our micro blog.
 
-Store each posting in our database. Remember, you can use the [dataset](https://dataset.readthedocs.org/) module to simplify this process!
+Store each posting in our database. Remember, you can use (dataset)[https://dataset.readthedocs.org/] to simplify this process!
 
 Display all postings in order.
 
 #### Possible approaches:
 
-Refer to the [example source on Github](https://github.com/oatnog/flaskr).
+Refer to the example source on Github. https://github.com/oatnog/flaskr
 
 
 Extension
